@@ -45,6 +45,7 @@ section.hero {
     display: flex;
     gap: 2rem;
     margin-top: 3rem;
+    font-weight: 800;
 
     & .button {
       display: flex;
