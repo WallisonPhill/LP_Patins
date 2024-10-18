@@ -140,6 +140,28 @@ section.hero {
   }
 }
 
+@media (width <= 80em) {
+  section.hero {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+    justify-content: flex-start;
+
+    & h1 {
+      max-width: 20rem;
+      margin-bottom: 0;
+    }
+
+    & > div:nth-child(2) {
+      margin-top: 0;
+    }
+
+    & .buttons {
+      flex-direction: column-reverse;
+      max-width: 18rem;
+    }
+  }
+}
+
 @keyframes slideIn {
   50% {
     transform: translateX(-20px);
